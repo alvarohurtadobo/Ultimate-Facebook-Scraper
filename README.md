@@ -15,6 +15,8 @@
     <img src="https://user-images.githubusercontent.com/30947706/76143280-07c70380-6098-11ea-86b1-79fbce03888c.png" width="250" />
   </a>  
   <br>
+  <img src="https://media.gettyimages.com/videos/pakistan-flag-video-id1161759219?s=640x640" target="_blank" width="250">
+  <br><br>
   <a href="https://www.codacy.com/manual/harismuneer/Ultimate-Facebook-Scraper?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=harismuneer/Ultimate-Facebook-Scraper&amp;utm_campaign=Badge_Grade">
     <img src="https://api.codacy.com/project/badge/Grade/7f41790c3c3a4fd29293777c676c8617" />
   </a>
@@ -78,11 +80,6 @@
   </a>
 
   <img hspace="5"/>
-  <a href='https://anonyviet.com/huong-dan-thu-thap-thong-tin-facebook-bang-ultimate-facebook-scraper/'>
-    <img src = "https://user-images.githubusercontent.com/30947706/76143203-2d074200-6097-11ea-8d0f-ff0120bddcb7.png" width="140" alt="Anonyviet"/>
-  </a>
-
-  <img hspace="5"/>
   <a href='https://onehack.us/t/ultimate-facebook-scraper-a-bot-which-scrapes-almost-everything-about-a-facebook/63803'>
     <img src = "https://user-images.githubusercontent.com/30947706/76143245-76579180-6097-11ea-993d-98dd6db76c91.png" width="140" alt="OneHack"/>
   </a>
@@ -115,7 +112,7 @@ A bot which scrapes almost everything about a user's Facebook profile including:
 - videos
 - friends list and their profile photos (including Followers, Following, Work Friends, College Friends etc)
 - and all public posts/statuses available on the user's timeline
-- **NEW** Now you can scrape Facebook group posts.
+- **NEW:** Now you can scrape Facebook group posts.
 
 Data is scraped in an organized format to be used for educational/research purposes by researchers. This scraper does not use Facebook's Graph API meaning there are no rate limiting issues.
 
@@ -156,15 +153,11 @@ You will need to:
 - Have a Facebook account without 2FA enabled
 
 ```bash
-$ git clone https://github.com/harismuneer/Ultimate-Facebook-Scraper.git
-$ cd Ultimate-Facebook-Scraper
-
-# Set up a virtual env
-$ python3 -m venv venv
-$ source venv/bin/activate
+git clone https://github.com/harismuneer/Ultimate-Facebook-Scraper.git
+cd Ultimate-Facebook-Scraper
 
 # Install Python requirements
-$ pip install -e .
+pip install -e .
 ```
 
 The code is multi-platform and is tested on both Windows and Linux.
@@ -180,7 +173,7 @@ Make sure the link only contains the username or id number at the end and not an
 Run the `ultimate-facebook-scraper` command ! 🚀
 
 ```python
-$ python scraper/scraper.py
+python scraper/scraper.py
 ```
 
 > Note: There are two modes to download Friends Profile Pics and the user's Photos: Large Size and Small Size. By default they are set to Small Sized Pics because its really quick while Large Size Mode takes time depending on the number of pictures to download.
@@ -188,7 +181,7 @@ $ python scraper/scraper.py
 You can personalize your scrapping needs using the command line arguments:
 
 ```python
-$ python scraper/scraper.py \
+python scraper/scraper.py \
     --uploaded_photos True \
     --friends_photos True \
     --friends_small_size True \
